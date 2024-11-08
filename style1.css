@@ -1,0 +1,163 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 10em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-image: url(images/wald_banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+header h1{
+    margin: 0;
+    font-size: 400%;
+    color: white;
+    text-shadow: 
+        2px 2px 10px black,   /* Schatten nach rechts unten */
+        -2px 2px 10px black,  /* Schatten nach links unten */
+        2px -2px 10px black,  /* Schatten nach rechts oben */
+        -2px -2px 10px black; /* Schatten nach links oben */  
+}
+
+body{
+    margin: 0;
+}
+/*NAVIGATION*/
+.navigation{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 0.5%;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: rgb(0, 100, 0);
+    width: 100%;
+}
+.navigation-links{
+    display: inline-block;
+    width: 20%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 4%;
+    font-size: 140%;
+    line-height: 1;
+    text-decoration: none;
+    position: relative;
+}
+.navigation-links a {
+    text-decoration: none;
+    border-radius: 10px;
+    display: block;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: white;
+    font-weight: bold;
+}
+.navigation-links a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+}
+.navigation-links a span{
+    font-size: 60%;
+    font-weight: 200;
+}
+
+/*DROPDOWN MENUS*/
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: rgb(65, 151, 88);
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    z-index: 2;
+}
+.navigation-links:hover #dropdown-lektionen{
+    display: block;
+    font-size: 80%;
+}
+.navigation-links .dropdown a{
+    padding: 15px;
+}
+
+/*MAIN*/
+main .lektionen {
+    width: 100%;
+    height: 100vh;
+    text-align: left;
+    margin-top: 0.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: rgba(106, 185, 106, 0.74);
+}
+main .titel-lektionen{
+    display: flex;
+    align-items: center; /* Zentriert h2 und Icon vertikal */
+    justify-content: space-between; /* h2 links, Icon rechts */
+    border-bottom: 2px solid black;
+    padding: 0.5em 0; /* Abstand oben und unten */
+    box-sizing: border-box;
+    position: relative;
+}
+main .titel-lektionen h2{
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    margin-top: 1%;
+    z-index: 0;
+}
+main .titel-lektionen i{
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding:2px;
+}
+main .titel-lektionen i:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+main .titel-lektionen button{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: 50%;
+}
+main .lektionen .lernziele{
+    display: none;
+    position: absolute;
+    background-color: rgb(171, 222, 172);
+    width: 97.8%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 120%;
+}
+.lektionen li{
+    list-style-type: circle;
+    padding: 5px 0px;
+}
+
+/*QUICKLINK nach OBEN*/
+#totop {
+    text-decoration: none;
+    color: black;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+}
+#totop i{
+    font-size: 250%;
+    background-color: white;
+    border-radius: 50%;
+}

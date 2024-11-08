@@ -1,0 +1,181 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 10em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-image: url(images/wald_banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+header h1{
+    margin: 0;
+    font-size: 400%;
+    color: white;
+    text-shadow: 
+        2px 2px 10px black,   /* Schatten nach rechts unten */
+        -2px 2px 10px black,  /* Schatten nach links unten */
+        2px -2px 10px black,  /* Schatten nach rechts oben */
+        -2px -2px 10px black; /* Schatten nach links oben */  
+}
+/*
+.submenu{
+    width: 97.5%;
+    margin-left: 1.25%;
+    font-size: 1.25em;
+    background-color: rgba(0, 50, 0, 0.4);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-bottom: 0.5em;
+}
+.submenu table tr td{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    border-radius: 20px;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+.submenu .menubutton {
+    margin-left: 98%;
+    font-size: 0.5;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: rgba(0, 50, 0, 0.0);
+    border-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+.submenu .menubutton:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.submenu .menubutton img{
+    width: 15px;
+    height: auto;
+}
+
+#overview_lektionen{
+    display: none;
+    padding-top: 1em;
+}
+.submenu table td a{
+    text-decoration: none;
+    color: rgb(0, 50, 0);
+    font-weight: 600;
+}
+.submenu table td a:hover{
+    color: #333;
+}
+.submenu table td:hover{
+    background-color: rgba(255, 255, 255, 0.1);   
+}
+*/
+
+.reiter{
+    background-color: rgb(1, 96, 1);
+    border-radius: 20px;
+    margin-top: 0.5em;
+    border: 2px solid black;
+    font-size: 1.5em;
+    position: sticky;
+    top: 0;
+}
+
+/* Stil für die Reiterleiste*/
+.reiter ul {
+    list-style-type: none;   
+    margin: 0;               
+    padding: 0;              
+    display: flex;           
+    width: 100%;
+    justify-content: center;
+    gap: 5%;
+}
+
+/* Stile für die Listenelemente */
+.reiter ul li {
+    padding: 0;
+    margin: 0;        
+    width: 20%; 
+    text-align: center;
+    line-height: 0.75;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.reiter ul li span{
+    font-size: 0.5em;
+    color: black;
+}
+
+/* Stile für die Links innerhalb der Navigation */
+.reiter ul li a {
+    color: white;            
+    text-decoration: none;   
+}
+
+/* Hover-Effekt für die Links */
+.reiter ul li a:hover {
+    color: #ddd;   
+    background-color: rgba(255, 255, 255, 0.1);   
+}
+
+.reiter ul li a{
+    padding:5% 30%;
+}
+
+.reiter .spacer{
+    visibility: hidden;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(57, 140, 57);
+    width: 95%;
+    z-index: 1;
+    margin-left: 2.5%;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+main {
+    padding: 0px 20px 20px 20px;
+    background-color: lightgreen;
+    border: 2px solid #333;
+    text-align: center;
+    margin-top: 1em;
+    border-radius: 10px;
+}
+
+main article{
+    height: 10em;
+    border: 1px solid black;
+    margin-top: 2em;
+}

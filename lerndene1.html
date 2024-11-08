@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wald entdecken</title>
+    <link rel="icon" type="image/x-icon" href="/images/DALL·E-2024-10-08-15.26.ico">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <header id="Titel">
+        <div>
+            <h1>den Wald entdecken</h1>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <div class="navigation-links">
+            <a href="index.html">Start <br> <span>zur Übersicht</span></a>
+        </div>
+        <div class="navigation-links">
+            <a href="lerndene1.html">Lektionen <br> <span>für Lernende</span></a>
+            <div class=dropdown id="dropdown-lektionen">
+                <a class="unterlinks" style=font-weight:lighter href="#lektion1">Lektion1</a>
+                <a class="unterlinks" style=font-weight:lighter href="#lektion2">Lektion2</a>
+                <a class="unterlinks" style=font-weight:lighter href="#lektion3">Lektion3</a>
+            </div>
+        </div>
+        <div class="navigation-links">
+            <a href="kommentar.html">Kommentar <br> <span>für Lehrpersonen</span></a>
+        </div>
+        <div class="navigation-links">
+            <a href="impressum.html">Impressum <br> <span>und Kontakt</span></a> 
+        </div>
+    </nav>
+
+    <main>
+        <div class="lektionen" id="lektion1"> 
+            <div class="titel-lektionen"><h2>Lektion 1</h2> <button class="buttonLernziele" onclick="displayLernziele()"><i class="material-icons">flag</i></button> </div>
+            <div class="lernziele" id="lernziele-lektion1"> <!--Erste Aufgabe Wimmelbild Wald als Einstieg, Programmieren mit Gamemaker-->
+                <ul>
+                    <li>Lernziel 1</li>
+                    <li>Lernziel 2</li>
+                    <li>Lernziel 3</li>
+                </ul>
+            </div>
+            <div>Inhalt</div>
+        </div>
+        <div class="lektionen" id="lektion2"> 
+            <div class="titel-lektionen"><h2>Lektion2</h2></div>
+        </div>
+        <div class="lektionen" id="lektion3"> 
+            <div class="titel-lektionen"><h2>Lektion3</h2></div>
+        </div>
+    </main>
+
+    <footer>
+        <!--siehe andere Webseiten-->
+        <h1>Footer</h1>
+    </footer>
+    
+    <a id="totop" href="#Titel"><i class="material-icons">arrow_circle_up</i></a>
+
+</body>
+</html>
